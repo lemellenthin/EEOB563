@@ -1,0 +1,380 @@
+
+  20 Populations
+
+Neighbor-Joining/UPGMA method version 3.697
+
+
+ Neighbor-joining method
+
+ Negative branch lengths allowed
+
+
+  +-----Echidna   
+  ! 
+  !       +-------Opossum   
+  !     +-2 
+  !   +-3 +------Bandicoot 
+  !   ! ! 
+  !   ! +------Wallaby   
+  !   ! 
+  1---6  +-------Mouse     
+  !   !  !  
+  !   !  !    +---------Tenrec    
+  !   +-10  +-7 
+  !      !  ! +-----------Hedgehog  
+  !      !  !  
+  !      !  !     +----------Elephant  
+  !      +-12  +-11  
+  !         !  !  ! +---------Sloth     
+  !         !  !  +-5 
+  !         !  !    +------Armadillo 
+  !         !  !  
+  !         +-17     +-------Aardvark  
+  !            !  +-13  
+  !            !  !  +--------Rabbit    
+  !            !  !  
+  !            +-18    +---------Human     
+  !               !  +-9 
+  !               !  ! +------Cat       
+  !               !  !  
+  !               +-16     +--------Tree_shrew
+  !                  !  +-14  
+  !                  !  !  +------Dog       
+  !                  +-15  
+  !                     ! +------Flying_fox
+  !                     +-8 
+  !                       ! +-----Pig       
+  !                       +-4 
+  !                         +-------Whale     
+  ! 
+  +------Platypus  
+
+
+remember: this is an unrooted tree!
+
+Between        And            Length
+-------        ---            ------
+   1          Echidna         0.10140
+   1             6            0.07430
+   6             3            0.02015
+   3             2            0.00203
+   2          Opossum         0.13656
+   2          Bandicoot       0.12023
+   3          Wallaby         0.12363
+   6            10            0.01046
+  10          Mouse           0.12929
+  10            12            0.00558
+  12             7            0.01194
+   7          Tenrec          0.16498
+   7          Hedgehog        0.19056
+  12            17            0.00753
+  17            11            0.00711
+  11          Elephant        0.18500
+  11             5            0.01430
+   5          Sloth           0.16007
+   5          Armadillo       0.11357
+  17            18            0.00123
+  18            13            0.00580
+  13          Aardvark        0.12615
+  13          Rabbit          0.13760
+  18            16            0.00380
+  16             9            0.01109
+   9          Human           0.17568
+   9          Cat             0.11754
+  16            15            0.00358
+  15            14            0.00216
+  14          Tree_shrew      0.15473
+  14          Dog             0.13232
+  15             8            0.01146
+   8          Flying_fox      0.12206
+   8             4            0.01648
+   4          Pig             0.09636
+   4          Whale           0.12487
+   1          Platypus        0.11441
+
+
+
+  20 Populations
+
+Neighbor-Joining/UPGMA method version 3.697
+
+
+ Neighbor-joining method
+
+ Negative branch lengths allowed
+
+
+  +-----Echidna   
+  ! 
+  !        +-------Opossum   
+  !      +-2 
+  !    +-3 +------Bandicoot 
+  !    ! ! 
+  !    ! +------Wallaby   
+  !    ! 
+  1----6  +-------Mouse     
+  !    !  !  
+  !    !  !    +---------Tenrec    
+  !    +-10  +-7 
+  !       !  ! +-----------Hedgehog  
+  !       !  !  
+  !       !  !     +----------Elephant  
+  !       +-12  +-11  
+  !          !  !  ! +---------Sloth     
+  !          !  !  +-5 
+  !          !  !    +------Armadillo 
+  !          !  !  
+  !          +-17     +-------Aardvark  
+  !             !  +-13  
+  !             !  !  +--------Rabbit    
+  !             !  !  
+  !             +-18    +---------Human     
+  !                !  +-9 
+  !                !  ! +------Cat       
+  !                !  !  
+  !                +-16     +--------Tree_shrew
+  !                   !  +-14  
+  !                   !  !  +-------Dog       
+  !                   +-15  
+  !                      ! +------Flying_fox
+  !                      +-8 
+  !                        ! +-----Pig       
+  !                        +-4 
+  !                          +-------Whale     
+  ! 
+  +------Platypus  
+
+
+remember: this is an unrooted tree!
+
+Between        And            Length
+-------        ---            ------
+   1          Echidna         0.10233
+   1             6            0.07527
+   6             3            0.01981
+   3             2            0.00213
+   2          Opossum         0.13575
+   2          Bandicoot       0.11977
+   3          Wallaby         0.12441
+   6            10            0.01043
+  10          Mouse           0.12802
+  10            12            0.00560
+  12             7            0.01205
+   7          Tenrec          0.16611
+   7          Hedgehog        0.18960
+  12            17            0.00753
+  17            11            0.00704
+  11          Elephant        0.18365
+  11             5            0.01408
+   5          Sloth           0.15848
+   5          Armadillo       0.11327
+  17            18            0.00137
+  18            13            0.00569
+  13          Aardvark        0.12545
+  13          Rabbit          0.13814
+  18            16            0.00397
+  16             9            0.01096
+   9          Human           0.17468
+   9          Cat             0.11803
+  16            15            0.00334
+  15            14            0.00225
+  14          Tree_shrew      0.15544
+  14          Dog             0.13323
+  15             8            0.01136
+   8          Flying_fox      0.12247
+   8             4            0.01653
+   4          Pig             0.09575
+   4          Whale           0.12461
+   1          Platypus        0.11524
+
+
+
+  20 Populations
+
+Neighbor-Joining/UPGMA method version 3.697
+
+
+ Neighbor-joining method
+
+ Negative branch lengths allowed
+
+
+  +-----Echidna   
+  ! 
+  !       +-------Opossum   
+  !     +-2 
+  !   +-3 +------Bandicoot 
+  !   ! ! 
+  !   ! +------Wallaby   
+  !   ! 
+  1---6  +------Mouse     
+  !   !  !  
+  !   !  !    +--------Tenrec    
+  !   +-10  +-7 
+  !      !  ! +---------Hedgehog  
+  !      !  !  
+  !      !  !       +---------Elephant  
+  !      +-12     +-5 
+  !         !  +-11 +--------Sloth     
+  !         !  !  !  
+  !         !  !  +------Armadillo 
+  !         !  !  
+  !         +-14     +------Aardvark  
+  !            !  +-13  
+  !            !  !  +-------Rabbit    
+  !            !  !  
+  !            +-15    +---------Human     
+  !               !  +-9 
+  !               !  ! +------Cat       
+  !               !  !  
+  !               +-16    +------Flying_fox
+  !                  !  +-8 
+  !                  !  ! ! +-----Pig       
+  !                  !  ! +-4 
+  !                  +-17   +------Whale     
+  !                     !  
+  !                     !  +--------Tree_shrew
+  !                     +-18  
+  !                        +------Dog       
+  ! 
+  +------Platypus  
+
+
+remember: this is an unrooted tree!
+
+Between        And            Length
+-------        ---            ------
+   1          Echidna         0.10200
+   1             6            0.06643
+   6             3            0.01723
+   3             2            0.00198
+   2          Opossum         0.12998
+   2          Bandicoot       0.11521
+   3          Wallaby         0.11902
+   6            10            0.01022
+  10          Mouse           0.12181
+  10            12            0.00456
+  12             7            0.01201
+   7          Tenrec          0.15787
+   7          Hedgehog        0.17850
+  12            14            0.00505
+  14            11            0.00689
+  11             5            0.01242
+   5          Elephant        0.16335
+   5          Sloth           0.15238
+  11          Armadillo       0.11982
+  14            15            0.00226
+  15            13            0.00546
+  13          Aardvark        0.12038
+  13          Rabbit          0.13189
+  15            16            0.00227
+  16             9            0.01056
+   9          Human           0.16300
+   9          Cat             0.11417
+  16            17            0.00308
+  17             8            0.01107
+   8          Flying_fox      0.11748
+   8             4            0.01329
+   4          Pig             0.09312
+   4          Whale           0.11944
+  17            18            0.00193
+  18          Tree_shrew      0.14864
+  18          Dog             0.12765
+   1          Platypus        0.11288
+
+
+
+  20 Populations
+
+Neighbor-Joining/UPGMA method version 3.697
+
+
+ Neighbor-joining method
+
+ Negative branch lengths allowed
+
+
+  +-----Echidna   
+  ! 
+  !     +-------Opossum   
+  !   +-3 
+  !   ! ! +-----Wallaby   
+  !   ! +-2 
+  !   !   +-----Bandicoot 
+  1---6 
+  !   ! +------Mouse     
+  !   ! ! 
+  !   ! !  +--------Tree_shrew
+  !   +-8  !  
+  !     !  !    +-----Flying_fox
+  !     !  !  +-7 
+  !     !  !  ! ! +-----Pig       
+  !     +-11  ! +-4 
+  !        !  !   +------Whale     
+  !        !  !  
+  !        !  !       +--------Elephant  
+  !        !  !     +-5 
+  !        +-15     ! +-------Sloth     
+  !           !  +-14  
+  !           !  !  !  +--------Tenrec    
+  !           !  !  +-13  
+  !           !  !     !  +------Armadillo 
+  !           !  !     +-10  
+  !           !  !        +---------Hedgehog  
+  !           +-17  
+  !              !        +------Aardvark  
+  !              !     +-12  
+  !              !  +-16  +------Rabbit    
+  !              !  !  !  
+  !              +-18  +-------Dog       
+  !                 !  
+  !                 ! +--------Human     
+  !                 +-9 
+  !                   +------Cat       
+  ! 
+  +------Platypus  
+
+
+remember: this is an unrooted tree!
+
+Between        And            Length
+-------        ---            ------
+   1          Echidna         0.10039
+   1             6            0.06706
+   6             3            0.02447
+   3          Opossum         0.12762
+   3             2            0.00206
+   2          Wallaby         0.10956
+   2          Bandicoot       0.11133
+   6             8            0.00576
+   8          Mouse           0.11817
+   8            11            0.00712
+  11          Tree_shrew      0.14727
+  11            15            0.00381
+  15             7            0.01068
+   7          Flying_fox      0.11246
+   7             4            0.01196
+   4          Pig             0.09018
+   4          Whale           0.11854
+  15            17            0.00410
+  17            14            0.00635
+  14             5            0.01540
+   5          Elephant        0.16242
+   5          Sloth           0.14588
+  14            13            0.00161
+  13          Tenrec          0.15867
+  13            10            0.00376
+  10          Armadillo       0.11538
+  10          Hedgehog        0.17459
+  17            18            0.00141
+  18            16            0.00229
+  16            12            0.00425
+  12          Aardvark        0.11589
+  12          Rabbit          0.12543
+  16          Dog             0.12824
+  18             9            0.00725
+   9          Human           0.16066
+   9          Cat             0.11215
+   1          Platypus        0.11027
+
+
