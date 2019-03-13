@@ -1,0 +1,10 @@
+#SBATCH --time=1:00:00   # walltime limit (HH:MM:SS)
+#SBATCH --nodes=1   # number of nodes
+#SBATCH --ntasks-per-node=16   # 16 processor core(s) per node 
+#SBATCH --job-name="lauren_5_1"
+#SBATCH --mail-user=laurmel@iastate.edu   # email address
+#SBATCH --mail-type=BEGIN
+#SBATCH --mail-type=END
+#SBATCH --mail-type=FAIL
+module load raxml
+raxml-ng -all --msa alignment.fs --model F81 --prefix yay --threads 16 --bs-metric fbp

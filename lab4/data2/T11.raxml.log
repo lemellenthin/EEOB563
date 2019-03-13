@@ -1,0 +1,27 @@
+
+RAxML-NG v. 0.8.0 BETA released on 11.01.2019 by The Exelixis Lab.
+Authors: Alexey Kozlov, Alexandros Stamatakis, Diego Darriba, Tomas Flouri, Benoit Morel.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+WARNING: This is a BETA release, please use at your own risk!
+
+RAxML-NG was called at 12-Mar-2019 18:08:18 as follows:
+
+raxml-ng --support --tree heylo.raxml.bestTree --bs-trees allboot --prefix T11
+
+Analysis options:
+  run mode: Compute bipartition support (Felsenstein Bootstrap)
+  start tree(s): user
+  random seed: 1552432098
+  SIMD kernels: AVX
+  parallelization: PTHREADS (8 threads), thread pinning: OFF
+
+Reading reference tree from file: heylo.raxml.bestTree
+Reference tree size: 20
+
+Reading bootstrap trees from file: allboot
+
+ERROR: ERROR reading tree file (LIBPLL-111): syntax error, unexpected STRING, expecting OPAR. (line 2 column 0-8)
+
+

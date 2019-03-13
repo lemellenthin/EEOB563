@@ -1,0 +1,66 @@
+
+RAxML-NG v. 0.8.0 BETA released on 11.01.2019 by The Exelixis Lab.
+Authors: Alexey Kozlov, Alexandros Stamatakis, Diego Darriba, Tomas Flouri, Benoit Morel.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+WARNING: This is a BETA release, please use at your own risk!
+
+RAxML-NG was called at 12-Mar-2019 13:12:45 as follows:
+
+raxml-ng --all --msa alignment.fs --model F81 --prefix heylo --threads 4 --bs-trees 1000 --bs-metric fbp
+
+Analysis options:
+  run mode: ML tree search + bootstrapping (Felsenstein Bootstrap)
+  start tree(s): random (10) + parsimony (10)
+  bootstrap replicates: 1000
+  random seed: 1552414365
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX
+  parallelization: PTHREADS (4 threads), thread pinning: OFF
+
+WARNING: The model you specified on the command line (F81) will be ignored 
+         since the binary MSA file already contains a model definition.
+         If you want to change the model, please re-run RAxML-NG 
+         with the original PHYLIP/FASTA alignment and --redo option.
+
+[00:00:01] Loading binary alignment from file: heylo.raxml.rba
+[00:00:01] Alignment comprises 20 taxa, 1 partitions and 2114 patterns
+
+Partition 0: noname
+Model: F81+FO
+Alignment sites / patterns: 4482 / 2114
+Gaps: 6.81 %
+Invariant sites: 1.18 %
+
+
+[00:00:01] NOTE: Resuming execution from checkpoint (logLH: -54345.27, ML trees: 20, bootstraps: 365)
+[00:00:01] Data distribution: max. partitions/sites/weight per thread: 1 / 529 / 2116
+
+[00:00:01] ML tree search completed, best tree logLH: -54568.308898
+
+[00:00:01] Starting bootstrapping analysis with 1000 replicates.
+
+[00:00:17] Bootstrap tree #366, logLikelihood: -56040.195034
+[00:00:37] Bootstrap tree #367, logLikelihood: -54239.663042
+[00:01:06] Bootstrap tree #368, logLikelihood: -54366.097879
+[00:01:40] Bootstrap tree #369, logLikelihood: -52952.298555
+[00:02:06] Bootstrap tree #370, logLikelihood: -54937.961084
+[00:02:18] Bootstrap tree #371, logLikelihood: -53425.614672
+[00:02:38] Bootstrap tree #372, logLikelihood: -52924.590263
+[00:02:53] Bootstrap tree #373, logLikelihood: -55690.050068
+[00:03:20] Bootstrap tree #374, logLikelihood: -53871.883846
+[00:03:46] Bootstrap tree #375, logLikelihood: -54127.434471
+[00:03:55] Bootstrap tree #376, logLikelihood: -54666.585854
+[00:05:00] Bootstrap tree #377, logLikelihood: -54012.196464
+[00:05:19] Bootstrap tree #378, logLikelihood: -55218.928568
+[00:05:54] Bootstrap tree #379, logLikelihood: -54824.638192
+[00:06:21] Bootstrap tree #380, logLikelihood: -54386.793113
+[00:07:08] Bootstrap tree #381, logLikelihood: -55193.244051
+[00:07:25] Bootstrap tree #382, logLikelihood: -55387.751960
+[00:07:40] Bootstrap tree #383, logLikelihood: -55537.638087
+slurmstepd: error: *** JOB 2606 ON hpc-class11 CANCELLED AT 2019-03-12T13:20:33 ***

@@ -1,0 +1,54 @@
+
+RAxML-NG v. 0.8.0 BETA released on 11.01.2019 by The Exelixis Lab.
+Authors: Alexey Kozlov, Alexandros Stamatakis, Diego Darriba, Tomas Flouri, Benoit Morel.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+WARNING: This is a BETA release, please use at your own risk!
+
+RAxML-NG was called at 12-Mar-2019 18:05:09 as follows:
+
+raxml-ng --bsconverge --bs-trees heylo.raxml.bootstraps --prefix T10 --bs-cutoff 0.01
+
+Analysis options:
+  run mode: A posteriori bootstrap convergence test
+  start tree(s): 
+  random seed: 1552431909
+  SIMD kernels: AVX
+  parallelization: PTHREADS (8 threads), thread pinning: OFF
+
+Reading bootstrap trees from file: heylo.raxml.bootstraps
+Loaded 1000 trees with 20 taxa.
+
+Performing bootstrap convergence assessment using autoMRE criterion
+
+ # trees        avg WRF       avg WRF in %       # perms: wrf <= 1.00 %     converged?  
+      50         61.049              7.182                            0        NO
+     100         91.537              5.385                            0        NO
+     150         94.776              3.717                            0        NO
+     200        125.266              3.684                            2        NO
+     250        163.931              3.857                            3        NO
+     300        129.322              2.536                           12        NO
+     350        130.468              2.193                           49        NO
+     400        148.084              2.178                           58        NO
+     450        157.371              2.057                           86        NO
+     500        217.513              2.559                          113        NO
+     550        183.166              1.959                          169        NO
+     600        179.790              1.763                          222        NO
+     650        162.093              1.467                          296        NO
+     700        190.883              1.604                          308        NO
+     750        212.418              1.666                          296        NO
+     800        204.674              1.505                          433        NO
+     850        194.461              1.346                          458        NO
+     900        173.658              1.135                          562        NO
+     950        162.692              1.007                          640        NO
+    1000        170.088              1.001                          670        NO
+Bootstopping test did not converge after 1000 trees
+
+
+Execution log saved to: /home/laurmel/EEOB563_labs/lab4/data2/T10.raxml.log
+
+Analysis started: 12-Mar-2019 18:05:09 / finished: 12-Mar-2019 18:05:24
+
+Elapsed time: 15.150 seconds
+
