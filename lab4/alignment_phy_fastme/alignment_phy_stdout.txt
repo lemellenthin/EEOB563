@@ -1,0 +1,11 @@
+
+
+#  Analysing dataset 1
+
+ . Computing pairwise distances...
+
+ . Computing tree...
+
+ . Performing SPR...
+
+ . Time used 0h00m00s
