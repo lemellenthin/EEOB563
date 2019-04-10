@@ -1,8 +1,60 @@
 
 P A U P *
 Version 4.0a (build 165) for Unix/Linux (built on Apr  1 2019 at 23:00:36)
-Tue Apr  9 21:35:56 2019
+Wed Apr 10 00:19:47 2019
 
+
+paup> tstatus full
+
+Taxon-status summary:
+   Original data matrix contains 41 taxa
+   No taxa have been deleted
+   No taxa have been assigned to the outgroup: outgroup defaults to first taxon (Erenna richardi)
+
+Current status of all taxa:
+
+   Taxon                          Status
+ 1 Erenna richardi                -
+ 2 Abylopsis tetragona            -
+ 3 Physalia physalis              -
+ 4 Athorybia rosacea              -
+ 5 Lilyopsis fluoracantha         -
+ 6 Hydractinia symbiolongicarpus  -
+ 7 Frillagalma vityazi            -
+ 8 Clytia hemisphaerica           -
+ 9 Stephalia dilata               -
+10 Halistemma rubrum              -
+11 Bargmannia amoena              -
+12 Marrus claudanielis            -
+13 Diphyes dispar                 -
+14 Apolemia rubriversa            -
+15 Lychnagalma utricularia        -
+16 Prayidae D27SS7                -
+17 Prayidae D27D2                 -
+18 Nematostella vectensis         -
+19 Hydra magnipapillata           -
+20 Resomia ornicephala            -
+21 Rudjakovia sp                  -
+22 Ectopleura larynx              -
+23 Apolemia sp                    -
+24 Kephyes ovata                  -
+25 Chuniphyes multidentata        -
+26 Nanomia bijuga                 -
+27 Physophora gilmeri             -
+28 Bargmannia lata                -
+29 Podocoryna carnea              -
+30 Bargmannia elongata            -
+31 Aiptasia pallida               -
+32 Alatina alata                  -
+33 Physonect sp                   -
+34 Apolemia lanosa                -
+35 Chelophyes appendiculata       -
+36 Rhizophysa filiformis          -
+37 Cordagalma sp                  -
+38 Hippopodius hippopus           -
+39 Thermopalia sp                 -
+40 Agalma elegans                 -
+41 Forskalia asymmetrica          -
 
 paup> hsearch start=stepwise addseq=random nreps=100 swap=TBR
 
@@ -32,21 +84,22 @@ Heuristic search settings:
     Elapsed AddSeq   Taxa      Rearr.  -- Number of trees --    ------ Best trees -----
        time    rep  added      tried      saved   to swap       this rep        overall
   -------------------------------------------------------------------------------------
-    0:01:00     11      -     153833          1         1        1385039        1385039
-    0:02:00     27      -     294932          1         1        1385039        1385039
-    0:03:00     40      -     445922          1         1        1385039        1385039
-    0:04:00     50     16          -          1         -              -        1385039
-    0:05:00     58      -     764461          1         1        1385039        1385039
-    0:06:00     70     38          -          1         -              -        1385039
-    0:07:00     81      -    1070094          1         1        1385039        1385039
-    0:08:00     97      -    1210861          1         1        1385039        1385039
-    0:08:20    100      -    1267248          1         0        1385039        1385039
+    0:01:00     10     16          -          1         -              -        1385039
+    0:02:00     21      -     279100          1         1        1385039        1385039
+    0:03:00     29      -     415488          1         1        1385039        1385039
+    0:04:00     39      -     557380          1         1        1385039        1385039
+    0:05:00     50      -     696248          1         1        1385039        1385039
+    0:06:00     60      -     831352          1         1        1385039        1385039
+    0:07:00     70     18          -          1         -              -        1385039
+    0:08:00     82     36          -          1         -              -        1385039
+    0:09:00     92     31          -          1         -              -        1385039
+    0:09:53    100      -    1358492          1         0        1385039        1385039
 
 Heuristic search completed
-  Total number of rearrangements tried = 1267248
+  Total number of rearrangements tried = 1358492
   Score of best tree(s) found = 1385039
   Number of trees retained = 1
-  Time used = 00:08:20 (CPU time = 00:08:18.9)
+  Time used = 00:09:53 (CPU time = 00:08:55.1)
 
 Tree-island profile:
                      First      Last                        First    Times
@@ -142,101 +195,7 @@ Tree 1 (rooted using default outgroup)
      \----------------------------------------------------------+
                                                                 \----- Physonect sp
 
-paup> savetree file=hsearch.tre brlen=yes
-
-1 tree saved to file "~/EEOB563_labs/Final/hsearch.tre"
-
-paup> contree
-
-Strict consensus of 1 tree:
-
-/--------------------------------------------------------------------- Erenna richardi
-|
-|                                                               /----- Abylopsis tetragona
-|                                                         /-----+
-|                                                         |     \----- Diphyes dispar
-|                                                    /----+
-|                                               /----+    \----------- Chelophyes appendiculata
-|                                               |    |
-|                                               |    \---------------- Lilyopsis fluoracantha
-|                                         /-----+
-|                                         |     |               /----- Kephyes ovata
-|                                         |     \---------------+
-|                                         |                     \----- Chuniphyes multidentata
-|                    /--------------------+
-|                    |                    |                     /----- Prayidae D27SS7
-|                    |                    |               /-----+
-|                    |                    |               |     \----- Prayidae D27D2
-|                    |                    \---------------+
-|                    |                                    \----------- Hippopodius hippopus
-|                    |
-|                    |                                          /----- Physalia physalis
-|                    |               /--------------------------+
-|                    |               |                          \----- Rhizophysa filiformis
-|                    |               |
-|                    |               |                          /----- Hydractinia symbiolongicarpus
-|                    |          /----+    /---------------------+
-|                    |          |    |    |                     \----- Podocoryna carnea
-|               /----+          |    |    |
-|               |    |          |    \----+     /--------------------- Clytia hemisphaerica
-|               |    |          |         |     |
-|               |    |          |         |     |               /----- Nematostella vectensis
-|               |    |          |         \-----+         /-----+
-|               |    |          |               |         |     \----- Aiptasia pallida
-|               |    |          |               |    /----+
-|               |    |     /----+               |    |    \----------- Alatina alata
-|               |    |     |    |               \----+
-|               |    |     |    |                    |          /----- Hydra magnipapillata
-|               |    |     |    |                    \----------+
-|               |    |     |    |                               \----- Ectopleura larynx
-|               |    |     |    |
-|               |    |     |    |                               /----- Apolemia rubriversa
-|               |    |     |    |                         /-----+
-|               |    \-----+    |                         |     \----- Apolemia lanosa
-|               |          |    \-------------------------+
-|               |          |                              \----------- Apolemia sp
-|               |          |
-|               |          |                                    /----- Bargmannia amoena
-|          /----+          |                              /-----+
-|          |    |          |                              |     \----- Bargmannia elongata
-|          |    |          |                         /----+
-|          |    |          \-------------------------+    \----------- Bargmannia lata
-|          |    |                                    |
-|          |    |                                    \---------------- Rudjakovia sp
-|          |    |
-|          |    |                                               /----- Athorybia rosacea
-|          |    |                                         /-----+
-|          |    |                                         |     \----- Agalma elegans
-|          |    |                                    /----+
-|          |    |                               /----+    \----------- Halistemma rubrum
-|          |    |                               |    |
-|          |    |                               |    \---------------- Nanomia bijuga
-|    /-----+    |                         /-----+
-|    |     |    |                         |     |               /----- Lychnagalma utricularia
-|    |     |    |                         |     \---------------+
-|    |     |    |                    /----+                     \----- Physophora gilmeri
-|    |     |    |                    |    |
-|    |     |    |                    |    |                     /----- Cordagalma sp
-|    |     |    \--------------------+    \---------------------+
-|    |     |                         |                          \----- Forskalia asymmetrica
-|    |     |                         |
-\----+     |                         |                          /----- Frillagalma vityazi
-     |     |                         \--------------------------+
-     |     |                                                    \----- Resomia ornicephala
-     |     |
-     |     |                                                    /----- Stephalia dilata
-     |     \----------------------------------------------------+
-     |                                                          \----- Thermopalia sp
-     |
-     |                                                          /----- Marrus claudanielis
-     \----------------------------------------------------------+
-                                                                \----- Physonect sp
-
-paup> savetree file=hsearchcon.tre brlen=yes
-
-1 tree saved to file "~/EEOB563_labs/Final/hsearchcon.tre"
-
-paup> describe /plot=phylo
+paup> describe
 
 Tree description:
 
@@ -264,181 +223,107 @@ HI excluding uninformative characters = 0.4064
 Retention index (RI) = 0.5920
 Rescaled consistency index (RC) = 0.3701
 
-/---- Erenna richardi
-|
-|                                     /--- Abylopsis tetragona
-|                                  /-42
-|                                  |  \--- Diphyes dispar
-|                            /----43
-|                    /------44     \---- Chelophyes appendiculata
-|                    |       |
-|                    |       \---------- Lilyopsis fluoracantha
-|                /--46
-|                |   |   /-- Kephyes ovata
-|                |   \--45
-|                |       \-- Chuniphyes multidentata
-|        /------49
-|        |       |    /---- Prayidae D27SS7
-|        |       |  /47
-|        |       |  | \---- Prayidae D27D2
-|        |       \-48
-|        |          \------- Hippopodius hippopus
-|        |
-|        |                         /--- Physalia physalis
-|        |                 /------50
-|        |                 |       \---- Rhizophysa filiformis
-|        |                 |
-|        |                 |                   /------- Hydractinia symbiolongicarpus
-|        |          /-----58          /-------51
-|        |          |      |          |        \------ Podocoryna carnea
-|    /--66          |      |          |
-|    |   |          |      \---------57          /--- Clytia hemisphaerica
-|    |   |          |                 |          |
-|    |   |          |                 |          |                /--- Nematostella vectensis
-|    |   |          |                 \---------56          /----52
-|    |   |          |                            |          |     \--- Aiptasia pallida
-|    |   |          |                            | /-------53
-|    |   |    /----61                            | |        \------ Alatina alata
-|    |   |    |     |                            \55
-|    |   |    |     |                              |      /------ Hydra magnipapillata
-|    |   |    |     |                              \-----54
-|    |   |    |     |                                     \------ Ectopleura larynx
-|    |   |    |     |
-|    |   |    |     |       /-- Apolemia rubriversa
-|    |   |    |     |      59
-|    |   \---65     |      |\-- Apolemia lanosa
-|    |        |     \-----60
-|    |        |            \- Apolemia sp
-|    |        |
-|    |        |           /- Bargmannia amoena
-|  /76        |         /62
-|  | |        |         | \-- Bargmannia elongata
-|  | |        |      /-63
-|  | |        \-----64  \-- Bargmannia lata
-|  | |               |
-|  | |               \------- Rudjakovia sp
-|  | |
-|  | |                  /--- Athorybia rosacea
-|  | |               /-67
-|  | |               |  \-- Agalma elegans
-|  | |            /-68
-|  | |         /-69  \--- Halistemma rubrum
-|  | |         |  |
-|  | |         |  \--------- Nanomia bijuga
-|/78 |      /-71
-|| | |      |  |   /--- Lychnagalma utricularia
-|| | |      |  \--70
-|| | |   /-73      \---- Physophora gilmeri
-|| | |   |  |
-|| | |   |  |   /-------- Cordagalma sp
-|| | \--75  \--72
-|| |     |      \----- Forskalia asymmetrica
-|| |     |
-80 |     |  /---- Frillagalma vityazi
- | |     \-74
- | |        \--- Resomia ornicephala
- | |
- | |     / Stephalia dilata
- | \----77
- |       \ Thermopalia sp
- |
- | /- Marrus claudanielis
- \79
-   \- Physonect sp
-
-paup> contree
-
-Strict consensus of 1 tree:
-
 /--------------------------------------------------------------------- Erenna richardi
 |
 |                                                               /----- Abylopsis tetragona
-|                                                         /-----+
+|                                                         /----42
 |                                                         |     \----- Diphyes dispar
-|                                                    /----+
-|                                               /----+    \----------- Chelophyes appendiculata
+|                                                    /---43
+|                                               /---44    \----------- Chelophyes appendiculata
 |                                               |    |
 |                                               |    \---------------- Lilyopsis fluoracantha
-|                                         /-----+
+|                                         /----46
 |                                         |     |               /----- Kephyes ovata
-|                                         |     \---------------+
+|                                         |     \--------------45
 |                                         |                     \----- Chuniphyes multidentata
-|                    /--------------------+
+|                    /-------------------49
 |                    |                    |                     /----- Prayidae D27SS7
-|                    |                    |               /-----+
+|                    |                    |               /----47
 |                    |                    |               |     \----- Prayidae D27D2
-|                    |                    \---------------+
+|                    |                    \--------------48
 |                    |                                    \----------- Hippopodius hippopus
 |                    |
 |                    |                                          /----- Physalia physalis
-|                    |               /--------------------------+
+|                    |               /-------------------------50
 |                    |               |                          \----- Rhizophysa filiformis
 |                    |               |
 |                    |               |                          /----- Hydractinia symbiolongicarpus
-|                    |          /----+    /---------------------+
+|                    |          /---58    /--------------------51
 |                    |          |    |    |                     \----- Podocoryna carnea
-|               /----+          |    |    |
-|               |    |          |    \----+     /--------------------- Clytia hemisphaerica
+|               /---66          |    |    |
+|               |    |          |    \---57     /--------------------- Clytia hemisphaerica
 |               |    |          |         |     |
 |               |    |          |         |     |               /----- Nematostella vectensis
-|               |    |          |         \-----+         /-----+
+|               |    |          |         \----56         /----52
 |               |    |          |               |         |     \----- Aiptasia pallida
-|               |    |          |               |    /----+
-|               |    |     /----+               |    |    \----------- Alatina alata
-|               |    |     |    |               \----+
+|               |    |          |               |    /---53
+|               |    |     /---61               |    |    \----------- Alatina alata
+|               |    |     |    |               \---55
 |               |    |     |    |                    |          /----- Hydra magnipapillata
-|               |    |     |    |                    \----------+
+|               |    |     |    |                    \---------54
 |               |    |     |    |                               \----- Ectopleura larynx
 |               |    |     |    |
 |               |    |     |    |                               /----- Apolemia rubriversa
-|               |    |     |    |                         /-----+
-|               |    \-----+    |                         |     \----- Apolemia lanosa
-|               |          |    \-------------------------+
+|               |    |     |    |                         /----59
+|               |    \----65    |                         |     \----- Apolemia lanosa
+|               |          |    \------------------------60
 |               |          |                              \----------- Apolemia sp
 |               |          |
 |               |          |                                    /----- Bargmannia amoena
-|          /----+          |                              /-----+
+|          /---76          |                              /----62
 |          |    |          |                              |     \----- Bargmannia elongata
-|          |    |          |                         /----+
-|          |    |          \-------------------------+    \----------- Bargmannia lata
+|          |    |          |                         /---63
+|          |    |          \------------------------64    \----------- Bargmannia lata
 |          |    |                                    |
 |          |    |                                    \---------------- Rudjakovia sp
 |          |    |
 |          |    |                                               /----- Athorybia rosacea
-|          |    |                                         /-----+
+|          |    |                                         /----67
 |          |    |                                         |     \----- Agalma elegans
-|          |    |                                    /----+
-|          |    |                               /----+    \----------- Halistemma rubrum
+|          |    |                                    /---68
+|          |    |                               /---69    \----------- Halistemma rubrum
 |          |    |                               |    |
 |          |    |                               |    \---------------- Nanomia bijuga
-|    /-----+    |                         /-----+
+|    /----78    |                         /----71
 |    |     |    |                         |     |               /----- Lychnagalma utricularia
-|    |     |    |                         |     \---------------+
-|    |     |    |                    /----+                     \----- Physophora gilmeri
+|    |     |    |                         |     \--------------70
+|    |     |    |                    /---73                     \----- Physophora gilmeri
 |    |     |    |                    |    |
 |    |     |    |                    |    |                     /----- Cordagalma sp
-|    |     |    \--------------------+    \---------------------+
+|    |     |    \-------------------75    \--------------------72
 |    |     |                         |                          \----- Forskalia asymmetrica
 |    |     |                         |
-\----+     |                         |                          /----- Frillagalma vityazi
-     |     |                         \--------------------------+
+\---80     |                         |                          /----- Frillagalma vityazi
+     |     |                         \-------------------------74
      |     |                                                    \----- Resomia ornicephala
      |     |
      |     |                                                    /----- Stephalia dilata
-     |     \----------------------------------------------------+
+     |     \---------------------------------------------------77
      |                                                          \----- Thermopalia sp
      |
      |                                                          /----- Marrus claudanielis
-     \----------------------------------------------------------+
+     \---------------------------------------------------------79
                                                                 \----- Physonect sp
+
+paup> outgroup 3
+
+Outgroup status changed:
+  1 taxon transferred to outgroup
+  Total number of taxa now in outgroup = 1
+  Number of ingroup taxa = 40
+
+paup> outgroup 36
+
+Outgroup status changed:
+  1 taxon transferred to outgroup
+  Total number of taxa now in outgroup = 2
+  Number of ingroup taxa = 39
 
 paup> describe /plot=phylo
 
 Tree description:
 
   Unrooted tree(s) rooted using outgroup method
-
-  Note: No outgroup has been defined; tree is (arbitrarily) rooted at first taxon.
   Optimality criterion = parsimony
     Character-status summary:
       Of 395699 total characters:
@@ -450,7 +335,7 @@ Tree description:
     Gaps are treated as "missing"
     Character-state optimization: Accelerated transformation (ACCTRAN)
 
-Tree 1 (rooted using default outgroup)
+Tree 1 (rooted using user-specified outgroup)
 
 Tree length = 1385039
 Consistency index (CI) = 0.6251
@@ -460,91 +345,289 @@ HI excluding uninformative characters = 0.4064
 Retention index (RI) = 0.5920
 Rescaled consistency index (RC) = 0.3701
 
-/---- Erenna richardi
-|
-|                                     /--- Abylopsis tetragona
-|                                  /-42
-|                                  |  \--- Diphyes dispar
-|                            /----43
-|                    /------44     \---- Chelophyes appendiculata
-|                    |       |
-|                    |       \---------- Lilyopsis fluoracantha
-|                /--46
-|                |   |   /-- Kephyes ovata
-|                |   \--45
-|                |       \-- Chuniphyes multidentata
-|        /------49
-|        |       |    /---- Prayidae D27SS7
-|        |       |  /47
-|        |       |  | \---- Prayidae D27D2
-|        |       \-48
-|        |          \------- Hippopodius hippopus
+                                      /--- Erenna richardi
+                                      |
+                                   /-80  /- Marrus claudanielis
+                                   |  \-79
+                                /-78     \- Physonect sp
+                                |  |
+                                |  |        / Stephalia dilata
+                                |  \-------77
+                                |           \ Thermopalia sp
+                                |
+                                |                       /---- Athorybia rosacea
+                                |                   /--67
+                                |                   |   \--- Agalma elegans
+                                |                /-68
+                            /--76           /---69  \---- Halistemma rubrum
+                            |   |           |    |
+                            |   |           |    \----------- Nanomia bijuga
+                            |   |       /--71
+                            |   |       |   |     /---- Lychnagalma utricularia
+                            |   |       |   \----70
+                            |   |   /--73         \----- Physophora gilmeri
+                            |   |   |   |
+                            |   |   |   |    /----------- Cordagalma sp
+                            |   \--75   \---72
+                            |       |        \-------- Forskalia asymmetrica
+                            |       |
+                            |       |   /----- Frillagalma vityazi
+                       /---66       \--74
+                       |    |           \---- Resomia ornicephala
+                       |    |
+                       |    |                                    /---- Abylopsis tetragona
+                       |    |                                 /-42
+                       |    |                                 |  \---- Diphyes dispar
+                       |    |                        /-------43
+                       |    |              /--------44        \----- Chelophyes appendiculata
+                       |    |              |         |
+                       |    |              |         \------------- Lilyopsis fluoracantha
+                       |    |         /---46
+                       |    |         |    |    /---- Kephyes ovata
+                       |    |         |    \---45
+                 /----65    |         |         \---- Chuniphyes multidentata
+                 |     |    \--------49
+                 |     |              |     /------ Prayidae D27SS7
+                 |     |              |  /-47
+                 |     |              |  |  \----- Prayidae D27D2
+                 |     |              \-48
+                 |     |                 \--------- Hippopodius hippopus
+                 |     |
+                 |     |               /- Bargmannia amoena
+         /------61     |            /-62
+         |       |     |            |  \- Bargmannia elongata
+         |       |     |        /--63
+         |       |     \-------64   \--- Bargmannia lata
+         |       |              |
+         |       |              \--------- Rudjakovia sp
+         |       |
+         |       |         /--- Apolemia rubriversa
+         |       |        59
+/-------58       |        |\--- Apolemia lanosa
+|        |       \-------60
+|        |                \-- Apolemia sp
 |        |
-|        |                         /--- Physalia physalis
-|        |                 /------50
-|        |                 |       \---- Rhizophysa filiformis
-|        |                 |
-|        |                 |                   /------- Hydractinia symbiolongicarpus
-|        |          /-----58          /-------51
-|        |          |      |          |        \------ Podocoryna carnea
-|    /--66          |      |          |
-|    |   |          |      \---------57          /--- Clytia hemisphaerica
-|    |   |          |                 |          |
-|    |   |          |                 |          |                /--- Nematostella vectensis
-|    |   |          |                 \---------56          /----52
-|    |   |          |                            |          |     \--- Aiptasia pallida
-|    |   |          |                            | /-------53
-|    |   |    /----61                            | |        \------ Alatina alata
-|    |   |    |     |                            \55
-|    |   |    |     |                              |      /------ Hydra magnipapillata
-|    |   |    |     |                              \-----54
-|    |   |    |     |                                     \------ Ectopleura larynx
-|    |   |    |     |
-|    |   |    |     |       /-- Apolemia rubriversa
-|    |   |    |     |      59
-|    |   \---65     |      |\-- Apolemia lanosa
-|    |        |     \-----60
-|    |        |            \- Apolemia sp
-|    |        |
-|    |        |           /- Bargmannia amoena
-|  /76        |         /62
-|  | |        |         | \-- Bargmannia elongata
-|  | |        |      /-63
-|  | |        \-----64  \-- Bargmannia lata
-|  | |               |
-|  | |               \------- Rudjakovia sp
-|  | |
-|  | |                  /--- Athorybia rosacea
-|  | |               /-67
-|  | |               |  \-- Agalma elegans
-|  | |            /-68
-|  | |         /-69  \--- Halistemma rubrum
-|  | |         |  |
-|  | |         |  \--------- Nanomia bijuga
-|/78 |      /-71
-|| | |      |  |   /--- Lychnagalma utricularia
-|| | |      |  \--70
-|| | |   /-73      \---- Physophora gilmeri
-|| | |   |  |
-|| | |   |  |   /-------- Cordagalma sp
-|| | \--75  \--72
-|| |     |      \----- Forskalia asymmetrica
-|| |     |
-80 |     |  /---- Frillagalma vityazi
- | |     \-74
- | |        \--- Resomia ornicephala
- | |
- | |     / Stephalia dilata
- | \----77
- |       \ Thermopalia sp
- |
- | /- Marrus claudanielis
- \79
-   \- Physonect sp
+|        |                          /-------- Hydractinia symbiolongicarpus
+|        |               /---------51
+|        |               |          \------- Podocoryna carnea
+|        |               |
+|        \--------------57            /---- Clytia hemisphaerica
+|                        |            |
+|                        |            |                     /--- Nematostella vectensis
+50                       \-----------56             /------52
+|                                     |             |       \--- Aiptasia pallida
+|                                     |  /---------53
+|                                     |  |          \-------- Alatina alata
+|                                     \-55
+|                                        |       /-------- Hydra magnipapillata
+|                                        \------54
+|                                                \-------- Ectopleura larynx
+|
++-------- Physalia physalis
+|
+\-------- Rhizophysa filiformis
 
-paup> savetree file=hsearchplot.tre brlen=yes
+paup> contree
 
-1 tree saved to file "~/EEOB563_labs/Final/hsearchplot.tre"
+Strict consensus of 1 tree:
+
+                                                          /----------- Erenna richardi
+                                                          |
+                                                    /-----+    /------ Marrus claudanielis
+                                                    |     \----+
+                             /----------------------+          \------ Physonect sp
+                             |                      |
+                             |                      |          /------ Stephalia dilata
+                             |                      \----------+
+                             |                                 \------ Thermopalia sp
+                             |
+                             |                                 /------ Athorybia rosacea
+                             |                            /----+
+                             |                            |    \------ Agalma elegans
+                             |                      /-----+
+                       /-----+                /-----+     \----------- Halistemma rubrum
+                       |     |                |     |
+                       |     |                |     \----------------- Nanomia bijuga
+                       |     |          /-----+
+                       |     |          |     |                /------ Lychnagalma utricularia
+                       |     |          |     \----------------+
+                       |     |     /----+                      \------ Physophora gilmeri
+                       |     |     |    |
+                       |     |     |    |                      /------ Cordagalma sp
+                       |     \-----+    \----------------------+
+                       |           |                           \------ Forskalia asymmetrica
+                       |           |
+                       |           |                           /------ Frillagalma vityazi
+                 /-----+           \---------------------------+
+                 |     |                                       \------ Resomia ornicephala
+                 |     |
+                 |     |                                       /------ Abylopsis tetragona
+                 |     |                                  /----+
+                 |     |                                  |    \------ Diphyes dispar
+                 |     |                            /-----+
+                 |     |                      /-----+     \----------- Chelophyes appendiculata
+                 |     |                      |     |
+                 |     |                      |     \----------------- Lilyopsis fluoracantha
+                 |     |                /-----+
+                 |     |                |     |                /------ Kephyes ovata
+                 |     |                |     \----------------+
+            /----+     |                |                      \------ Chuniphyes multidentata
+            |    |     \----------------+
+            |    |                      |                      /------ Prayidae D27SS7
+            |    |                      |                 /----+
+            |    |                      |                 |    \------ Prayidae D27D2
+            |    |                      \-----------------+
+            |    |                                        \----------- Hippopodius hippopus
+            |    |
+            |    |                                             /------ Bargmannia amoena
+      /-----+    |                                        /----+
+      |     |    |                                        |    \------ Bargmannia elongata
+      |     |    |                                  /-----+
+      |     |    \----------------------------------+     \----------- Bargmannia lata
+      |     |                                       |
+      |     |                                       \----------------- Rudjakovia sp
+      |     |
+      |     |                                                  /------ Apolemia rubriversa
+      |     |                                             /----+
+/-----+     |                                             |    \------ Apolemia lanosa
+|     |     \---------------------------------------------+
+|     |                                                   \----------- Apolemia sp
+|     |
+|     |                                                        /------ Hydractinia symbiolongicarpus
+|     |                                 /----------------------+
+|     |                                 |                      \------ Podocoryna carnea
+|     |                                 |
+|     \---------------------------------+     /----------------------- Clytia hemisphaerica
+|                                       |     |
+|                                       |     |                /------ Nematostella vectensis
+|                                       \-----+           /----+
+|                                             |           |    \------ Aiptasia pallida
+|                                             |     /-----+
+|                                             |     |     \----------- Alatina alata
+|                                             \-----+
+|                                                   |          /------ Hydra magnipapillata
+|                                                   \----------+
+|                                                              \------ Ectopleura larynx
+|
++--------------------------------------------------------------------- Physalia physalis
+|
+\--------------------------------------------------------------------- Rhizophysa filiformis
+
+paup> savetree file=hsearchoutgroup.tre brlen=yes
+
+1 tree saved to file "~/EEOB563_labs/Final/hsearchoutgroup.tre"
+
+paup> describe /plot=phylo
+
+Tree description:
+
+  Unrooted tree(s) rooted using outgroup method
+  Optimality criterion = parsimony
+    Character-status summary:
+      Of 395699 total characters:
+        All characters are of type 'unord'
+        All characters have equal weight
+        116669 characters are constant (proportion = 0.294843)
+        67579 variable characters are parsimony-uninformative
+        Number of parsimony-informative characters = 211451
+    Gaps are treated as "missing"
+    Character-state optimization: Accelerated transformation (ACCTRAN)
+
+Tree 1 (rooted using user-specified outgroup)
+
+Tree length = 1385039
+Consistency index (CI) = 0.6251
+Homoplasy index (HI) = 0.3749
+CI excluding uninformative characters = 0.5936
+HI excluding uninformative characters = 0.4064
+Retention index (RI) = 0.5920
+Rescaled consistency index (RC) = 0.3701
+
+                                      /--- Erenna richardi
+                                      |
+                                   /-80  /- Marrus claudanielis
+                                   |  \-79
+                                /-78     \- Physonect sp
+                                |  |
+                                |  |        / Stephalia dilata
+                                |  \-------77
+                                |           \ Thermopalia sp
+                                |
+                                |                       /---- Athorybia rosacea
+                                |                   /--67
+                                |                   |   \--- Agalma elegans
+                                |                /-68
+                            /--76           /---69  \---- Halistemma rubrum
+                            |   |           |    |
+                            |   |           |    \----------- Nanomia bijuga
+                            |   |       /--71
+                            |   |       |   |     /---- Lychnagalma utricularia
+                            |   |       |   \----70
+                            |   |   /--73         \----- Physophora gilmeri
+                            |   |   |   |
+                            |   |   |   |    /----------- Cordagalma sp
+                            |   \--75   \---72
+                            |       |        \-------- Forskalia asymmetrica
+                            |       |
+                            |       |   /----- Frillagalma vityazi
+                       /---66       \--74
+                       |    |           \---- Resomia ornicephala
+                       |    |
+                       |    |                                    /---- Abylopsis tetragona
+                       |    |                                 /-42
+                       |    |                                 |  \---- Diphyes dispar
+                       |    |                        /-------43
+                       |    |              /--------44        \----- Chelophyes appendiculata
+                       |    |              |         |
+                       |    |              |         \------------- Lilyopsis fluoracantha
+                       |    |         /---46
+                       |    |         |    |    /---- Kephyes ovata
+                       |    |         |    \---45
+                 /----65    |         |         \---- Chuniphyes multidentata
+                 |     |    \--------49
+                 |     |              |     /------ Prayidae D27SS7
+                 |     |              |  /-47
+                 |     |              |  |  \----- Prayidae D27D2
+                 |     |              \-48
+                 |     |                 \--------- Hippopodius hippopus
+                 |     |
+                 |     |               /- Bargmannia amoena
+         /------61     |            /-62
+         |       |     |            |  \- Bargmannia elongata
+         |       |     |        /--63
+         |       |     \-------64   \--- Bargmannia lata
+         |       |              |
+         |       |              \--------- Rudjakovia sp
+         |       |
+         |       |         /--- Apolemia rubriversa
+         |       |        59
+/-------58       |        |\--- Apolemia lanosa
+|        |       \-------60
+|        |                \-- Apolemia sp
+|        |
+|        |                          /-------- Hydractinia symbiolongicarpus
+|        |               /---------51
+|        |               |          \------- Podocoryna carnea
+|        |               |
+|        \--------------57            /---- Clytia hemisphaerica
+|                        |            |
+|                        |            |                     /--- Nematostella vectensis
+50                       \-----------56             /------52
+|                                     |             |       \--- Aiptasia pallida
+|                                     |  /---------53
+|                                     |  |          \-------- Alatina alata
+|                                     \-55
+|                                        |       /-------- Hydra magnipapillata
+|                                        \------54
+|                                                \-------- Ectopleura larynx
+|
++-------- Physalia physalis
+|
+\-------- Rhizophysa filiformis
+
+paup> savetree file=hsearchoutgroupbranch.tre brlen=yes
+
+1 tree saved to file "~/EEOB563_labs/Final/hsearchoutgroupbranch.tre"
 
 paup> cleartrees; log stop; defaults hsearch; quit;
 

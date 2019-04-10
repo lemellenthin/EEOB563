@@ -1,0 +1,460 @@
+
+P A U P *
+Version 4.0a (build 165) for Unix/Linux (built on Apr  1 2019 at 23:00:36)
+Tue Apr  9 21:50:25 2019
+
+
+paup> tstatus full
+
+Taxon-status summary:
+   Original data matrix contains 41 taxa
+   No taxa have been deleted
+   No taxa have been assigned to the outgroup: outgroup defaults to first taxon (Erenna richardi)
+
+Current status of all taxa:
+
+   Taxon                          Status
+ 1 Erenna richardi                -
+ 2 Abylopsis tetragona            -
+ 3 Physalia physalis              -
+ 4 Athorybia rosacea              -
+ 5 Lilyopsis fluoracantha         -
+ 6 Hydractinia symbiolongicarpus  -
+ 7 Frillagalma vityazi            -
+ 8 Clytia hemisphaerica           -
+ 9 Stephalia dilata               -
+10 Halistemma rubrum              -
+11 Bargmannia amoena              -
+12 Marrus claudanielis            -
+13 Diphyes dispar                 -
+14 Apolemia rubriversa            -
+15 Lychnagalma utricularia        -
+16 Prayidae D27SS7                -
+17 Prayidae D27D2                 -
+18 Nematostella vectensis         -
+19 Hydra magnipapillata           -
+20 Resomia ornicephala            -
+21 Rudjakovia sp                  -
+22 Ectopleura larynx              -
+23 Apolemia sp                    -
+24 Kephyes ovata                  -
+25 Chuniphyes multidentata        -
+26 Nanomia bijuga                 -
+27 Physophora gilmeri             -
+28 Bargmannia lata                -
+29 Podocoryna carnea              -
+30 Bargmannia elongata            -
+31 Aiptasia pallida               -
+32 Alatina alata                  -
+33 Physonect sp                   -
+34 Apolemia lanosa                -
+35 Chelophyes appendiculata       -
+36 Rhizophysa filiformis          -
+37 Cordagalma sp                  -
+38 Hippopodius hippopus           -
+39 Thermopalia sp                 -
+40 Agalma elegans                 -
+41 Forskalia asymmetrica          -
+
+paup> outgroup ?
+
+Usage: Outgroup taxon-list [/ Only];
+
+paup> outgroup 3
+
+Outgroup status changed:
+  1 taxon transferred to outgroup
+  Total number of taxa now in outgroup = 1
+  Number of ingroup taxa = 40
+
+paup> outgroup 36
+
+Outgroup status changed:
+  1 taxon transferred to outgroup
+  Total number of taxa now in outgroup = 2
+  Number of ingroup taxa = 39
+
+paup> tstatus full
+
+Taxon-status summary:
+   Original data matrix contains 41 taxa
+   No taxa have been deleted
+   Number of (nondeleted) outgroup taxa = 2
+
+Current status of all taxa:
+
+   Taxon                          Status
+ 1 Erenna richardi                -
+ 2 Abylopsis tetragona            -
+ 3 Physalia physalis               O
+ 4 Athorybia rosacea              -
+ 5 Lilyopsis fluoracantha         -
+ 6 Hydractinia symbiolongicarpus  -
+ 7 Frillagalma vityazi            -
+ 8 Clytia hemisphaerica           -
+ 9 Stephalia dilata               -
+10 Halistemma rubrum              -
+11 Bargmannia amoena              -
+12 Marrus claudanielis            -
+13 Diphyes dispar                 -
+14 Apolemia rubriversa            -
+15 Lychnagalma utricularia        -
+16 Prayidae D27SS7                -
+17 Prayidae D27D2                 -
+18 Nematostella vectensis         -
+19 Hydra magnipapillata           -
+20 Resomia ornicephala            -
+21 Rudjakovia sp                  -
+22 Ectopleura larynx              -
+23 Apolemia sp                    -
+24 Kephyes ovata                  -
+25 Chuniphyes multidentata        -
+26 Nanomia bijuga                 -
+27 Physophora gilmeri             -
+28 Bargmannia lata                -
+29 Podocoryna carnea              -
+30 Bargmannia elongata            -
+31 Aiptasia pallida               -
+32 Alatina alata                  -
+33 Physonect sp                   -
+34 Apolemia lanosa                -
+35 Chelophyes appendiculata       -
+36 Rhizophysa filiformis           O
+37 Cordagalma sp                  -
+38 Hippopodius hippopus           -
+39 Thermopalia sp                 -
+40 Agalma elegans                 -
+41 Forskalia asymmetrica          -
+
+paup> set outroot ?
+
+Error(#146): The 'outRoot' option requires a value field.
+                 Make sure the keyword is followed by an equal sign ('=') and a value.
+
+paup> set ?
+
+Usage: Set [options...];
+
+Optimality criterion, general search settings, etc.:
+
+Keyword ------- Option type -------------------------------------- Current setting -----------------
+criterion       parsimony|likelihood|distance                      parsimony
+maxtrees        <integer-value>                                    100
+increase        no|prompt|auto                                     prompt
+autoInc         <integer-value>                                    100
+constraints     <constraint-name>                                  (none)
+statusWin       no|yes                                             yes
+dStatus         <integer-value>|none                               60
+autoClose       no|yes                                             yes
+notifyBeep      no|yes                                             no
+
+Options for Nexus file input/output:
+
+Keyword ------- Option type -------------------------------------- Current setting -----------------
+allDigLab       prohibit|warn|noWarn                               warn
+allowPunct      no|yes                                             no
+nexusBlocks     data|taxaChar                                      data
+taxlabMatch     relaxed|strict                                     strict
+underscores     convert|keep                                       convert
+hashComments    no|yes                                             no
+
+Options for tree rooting and input/output:
+
+Keyword ------- Option type -------------------------------------- Current setting -----------------
+rootMethod      outgroup|lundberg|midpoint                         outgroup
+outRoot         polytomy|paraphyletic|monophyletic                 polytomy
+forcePolytomy   no|yes                                             no
+storeBrLens     no|yes                                             yes
+storeTreeWts    no|yes                                             yes
+
+Warning/error settings:
+
+Keyword ------- Option type -------------------------------------- Current setting -----------------
+warnReset       no|yes                                             yes
+warnTree        no|yes                                             yes
+warnTSave       no|yes                                             yes
+warnBlkName     no|yes                                             yes
+warnRoot        no|yes                                             yes
+warnRedef       no|yes                                             yes
+warnTFileNoData no|yes                                             no
+errorStop       no|yes                                             yes
+errorBeep       no|yes                                             yes
+queryBeep       no|yes                                             yes
+
+Options for matrix output:
+
+Keyword ------- Option type -------------------------------------- Current setting -----------------
+showExcluded    no|yes                                             no
+cmLabels        no|yes                                             no
+cmShowEq        no|yes                                             yes
+cmColWidth      <integer-value>                                    1
+cmCstatus       no|yes                                             no
+
+Options for tree drawing:
+
+Keyword ------- Option type -------------------------------------- Current setting -----------------
+semiGraph       no|yes                                             no
+tOrder          standard|right|left|alphabet                       standard
+tCompress       no|yes                                             no
+showTaxNum      no|yes                                             no
+taxLabels       truncate|full                                      truncate
+
+Miscellaneous settings:
+
+Keyword ------- Option type -------------------------------------- Current setting -----------------
+monitor         no|yes                                             yes
+flushLog        no|yes                                             no
+dataStorage     full|compact                                       compact
+defaultMode     no|yes                                             no
+showAbbrev      no|yes                                             no
+outwidth        <integer-value>|auto                              *auto
+pause           no|silent|beep|msg                                 no
+fLock           no|yes                                             yes
+                                                                  *Option is nonpersistent
+
+paup> set outroot=mono
+
+paup> bootstrap nreps=200 treefile=boot.tre search=heuristic /start=stepwise addseq=random nreps=10 swap=TBR
+
+Bootstrap method with heuristic search:
+  Number of bootstrap replicates = 200
+  Starting seed = generated automatically
+  Number of characters resampled in each replicate = 395699
+  Optimality criterion = parsimony
+    Character-status summary:
+      Of 395699 total characters:
+        All characters are of type 'unord'
+        All characters have equal weight
+        116669 characters are constant (proportion = 0.294843)
+        67579 variable characters are parsimony-uninformative
+        Number of parsimony-informative characters = 211451
+    Gaps are treated as "missing"
+  Starting tree(s) obtained via stepwise addition
+    Addition sequence: random
+    Number of replicates = 10
+    Starting seed = generated automatically
+    Number of trees held at each step = 1
+  Branch-swapping algorithm: tree-bisection-reconnection (TBR) with reconnection limit = 8
+    Steepest descent option not in effect
+  Initial 'Maxtrees' setting = 100
+  Branches collapsed (creating polytomies) if maximum branch length is zero
+  'MulTrees' option in effect
+  No topological constraints in effect
+  Trees are unrooted
+
+    Elapsed        AddSeq   Taxa      Rearr. -- Number of trees --   ----- Best trees ----
+       time    Rep    rep  added      tried     saved   to swap      this rep      overall
+  ----------------------------------------------------------------------------------------
+    0:01:00      1      4     13          -         1         -             -      1382950
+    0:02:00      1      9      -      94233         1         1       1383329      1382950
+    0:03:00      2      3      -      36272         1         1       1386033      1386033
+    0:04:00      2      7      -      79361         1         1       1386100      1386033
+    0:05:00      2     10      -     124706         1         1       1386090      1386033
+    0:06:00      3      4     41      33203         1         1       1384945      1384945
+    0:07:00      3     10      -      79376         1         1       1384945      1384945
+    0:08:00      4      4      -      47398         1         1       1385421      1385421
+    0:09:00      4      8     30          -         1         -             -      1385421
+    0:10:00      5      1      -      16081         0         1       1382790      1382790
+    0:11:00      5      4      -      58746         1         1       1382790      1382790
+    0:12:00      5      8     41     102189         1         1       1382790      1382790
+    0:13:00      6      1      -       8015         0         1       1380079      1380079
+    0:14:00      6      6      -      61169         1         1       1380079      1380079
+    0:15:00      6      9      -     110021         1         1       1380079      1380079
+    0:16:00      7      3      -      41787         1         1       1384894      1384894
+    0:17:00      7      7      -      93752         1         1       1384894      1384894
+    0:18:00      8      1      -        425         0         1       1403257      1403257
+    0:19:00      8      4      -      51884         1         1       1390156      1389779
+    0:20:00      8      7      -     101877         1         1       1389779      1389779
+    0:21:00      8     10      -     151778         1         1       1402864      1389779
+    0:22:00      9      2      -      28235         1         1       1379177      1379177
+    0:23:00      9      6     15          -         1         -             -      1379177
+    0:24:00      9      8      -     122041         1         1       1379177      1379177
+    0:25:00     10      2      -      14933         1         1       1390490      1390490
+    0:26:00     10      5      -      59635         1         1       1390514      1390490
+    0:27:00     10      8      -     109824         1         1       1390490      1390490
+    0:28:00     11      1      -      12753         0         1       1382298      1382298
+    0:29:00     11      5      -      67387         1         1       1382298      1382298
+    0:30:00     11      9      -     120810         1         1       1382298      1382298
+    0:31:00     12      3     32          -         1         -             -      1388539
+    0:32:00     12      6      -      78946         1         1       1388539      1388539
+    0:33:00     12     10      -     124168         1         1       1388539      1388539
+    0:34:00     13      3     41      40359         1         1       1386869      1386869
+    0:35:00     13      7      -      92951         1         1       1386869      1386869
+    0:36:00     14      2     17          -         1         -             -      1387126
+    0:37:00     14      6      -      62665         1         1       1387126      1387126
+    0:38:00     14     10      -     119648         1         1       1387126      1387126
+    0:39:00     15      4     39          -         1         -             -      1386574
+    0:40:00     15      7      -     106456         1         1       1386574      1386574
+    0:41:00     16      1      -       8602         0         1       1382140      1382140
+    0:42:00     16      5     39          -         1         -             -      1382140
+    0:43:00     16      9      -     125569         2         1       1388093      1382140
+    0:44:00     17      3      -      39843         1         1       1383859      1383859
+    0:45:00     17      8      -      94422         1         1       1383859      1383859
+    0:46:00     18      2      -      16029         2         1       1386230      1383187
+    0:47:00     18      5     41      72493         1         1       1383187      1383187
+    0:48:00     18     10     41          -         1         -             -      1383187
+    0:49:00     19      3      -      44378         1         1       1390742      1390742
+    0:50:00     19      7      -      93476         1         1       1391767      1390742
+    0:51:00     19      9      -     145221         1         1       1390742      1390742
+    0:52:00     20      2      -      28484         1         1       1384023      1384023
+    0:53:00     20      6     23          -         1         -             -      1384023
+    0:54:00     20      9      -     126872         1         1       1384023      1384023
+    0:55:00     21      2      -      26572         1         1       1387330      1387330
+    0:56:00     21      5      -      85984         1         1       1387330      1387330
+    0:57:00     21     10      -     140316         1         1       1387330      1387330
+    0:58:00     22      5      -      29781         1         1       1382618      1382618
+    0:59:00     22      9      -      87562         1         1       1382618      1382618
+    1:00:00     23      4     40          -         1         -             -      1385618
+    1:01:00     23      9      -      93470         1         1       1385618      1385618
+    1:02:00     24      4     11          -         1         -             -      1385520
+    1:03:00     24      7     38          -         1         -             -      1385520
+    1:04:00     24     10      -     128130         1         1       1385778      1385520
+    1:05:00     25      4      -      29752         1         1       1384463      1384463
+    1:06:00     25      7     41      81194         1         1       1384463      1384463
+    1:07:00     26      1      -       9169         0         1       1380694      1380694
+    1:08:00     26      5      -      58821         1         1       1380694      1380694
+    1:09:00     26     10      -     111038         1         1       1381718      1380694
+    1:10:00     27      3      -      36269         1         1       1386267      1383425
+    1:11:00     27      7      9          -         1         -             -      1383425
+    1:12:00     28      1     21          -         0         -             -            -
+    1:13:00     28      3      -      53449         1         1       1385903      1385903
+    1:14:00     28      7      -     110620         1         1       1385903      1385903
+    1:15:00     29      1     41       5187         0         1       1385056      1385056
+    1:16:00     29      4      -      52689         1         1       1385056      1385056
+    1:17:00     29      8     26          -         1         -             -      1385056
+    1:18:00     30      1      -      10178         0         1       1388487      1388487
+    1:19:00     30      6      -      60482         1         1       1388487      1388487
+    1:20:00     30     10     12          -         1         -             -      1388487
+    1:21:00     31      3      -      40462         1         1       1384339      1384339
+    1:22:00     31      7      -      92848         1         1       1384339      1384339
+    1:23:00     32      1      -       2513         0         1       1383068      1383068
+    1:24:00     32      5     38          -         1         -             -      1383068
+    1:25:00     33      1      -       1207         0         1       1388622      1388622
+    1:26:00     33      5      6          -         1         -             -      1386556
+    1:27:00     33      8      -      96226         1         1       1386556      1386556
+    1:28:00     34      1      -      12387         0         1       1387545      1387545
+    1:29:00     34      4      -      56183         1         1       1387545      1387545
+    1:30:00     34      7      -     103318         1         1       1387545      1387545
+    1:31:00     35      1      -       4409         0         1       1382140      1382140
+    1:32:00     35      5     41      59538         1         1       1382140      1382140
+    1:33:00     35      9      -     105674         1         1       1382140      1382140
+    1:34:00     36      2      -      22086         1         1       1383458      1383421
+    1:35:00     36      6     41          -         1         -             -      1383421
+    1:36:00     36      9      -     139549         1         1       1383421      1383421
+    1:37:00     37      3      -      40834         1         1       1388025      1388025
+    1:38:00     37      9      -      89645         1         1       1388067      1388025
+    1:39:00     38      2      -      25163         1         1       1386529      1386529
+    1:40:00     38      6     41      73099         1         1       1387615      1386529
+    1:41:00     38     10      -     125560         1         1       1386651      1386529
+    1:42:00     39      3      -      43096         1         1       1383503      1383503
+    1:43:00     39      7      -      93677         1         1       1383503      1383503
+    1:44:00     39     10      -     140105         1         1       1383503      1383503
+    1:45:00     40      3      -      38077         1         1       1383220      1383220
+    1:46:00     40      7     10          -         1         -             -      1383220
+    1:47:00     40     10      -     134166         1         1       1383220      1383220
+    1:48:00     41      4      -      41553         1         1       1388059      1385035
+    1:49:00     41      6      -     106349         1         1       1385035      1385035
+    1:50:00     41      9      -     163237         1         1       1385035      1385035
+    1:51:00     42      3      -      26495         1         1       1383053      1382943
+    1:52:00     42      7     41      76648         1         1       1386739      1382943
+    1:53:00     43      1      -        296         0         1       1381392      1381392
+    1:54:00     43      6     31          -         1         -             -      1381392
+    1:55:00     43      9      -     115620         1         1       1381392      1381392
+    1:56:00     44      3      -      33856         1         1       1382414      1382313
+    1:57:00     44      6     27          -         1         -             -      1382313
+    1:58:00     44      9      -     129394         2         1       1382414      1382313
+    1:59:00     45      2      -      28576         1         1       1381841      1381841
+    2:00:00     45      6     41      82944         1         1       1381841      1381841
+    2:01:00     45     10      -     135118         1         1       1381841      1381841
+    2:02:00     46      5      -      32941         1         1       1387297      1387297
+    2:03:00     46      8      -      81599         1         1       1387297      1387297
+    2:04:00     47      2      -      21783         1         1       1389388      1389388
+    2:05:00     47      5      -      70444         1         1       1389388      1389388
+    2:06:00     47      9     14          -         1         -             -      1389388
+    2:07:00     48      4     21          -         1         -             -      1385904
+    2:08:00     48      6      -      73181         1         1       1385904      1385904
+    2:09:00     48     10      -     125518         1         1       1386540      1385904
+    2:10:00     49      3      -      34614         1         1       1384157      1383886
+    2:11:00     49      6      4          -         1         -             -      1383886
+    2:12:00     49      9     19          -         1         -             -      1383886
+    2:13:00     50      1      -       9422         0         1       1385321      1385321
+    2:14:00     50      4      -      52589         1         1       1385321      1385321
+    2:15:00     50      7      -      97941         1         1       1385321      1385321
+    2:16:00     51      1     22          -         0         -             -            -
+    2:17:00     51      4      -      56081         1         1       1385603      1385603
+    2:18:00     51      9     36          -         1         -             -      1385603
+    2:19:00     52      1      -      18745         0         1       1382026      1382026
+    2:20:00     52      5      -      81109         1         1       1382026      1382026
+    2:21:00     52      9     41     141477         1         1       1382026      1382026
+    2:22:00     53      3     24          -         1         -             -      1386687
+    2:23:00     53      7     30          -         1         -             -      1386687
+    2:24:00     54      1     27          -         0         -             -            -
+    2:25:00     54      4      -      54074         1         1       1386649      1386649
+    2:26:00     54      8      -     103123         1         1       1386649      1386649
+    2:27:00     55      1     41      19895         0         1       1383696      1383696
+    2:28:00     55      5      -      74321         1         1       1384809      1383696
+    2:29:00     55      8      -     128241         1         1       1383696      1383696
+    2:30:00     56      1      -       7932         0         1       1386844      1386844
+    2:31:00     56      4      -      60936         1         1       1386855      1386844
+    2:32:00     56      7      -     115042         1         1       1386844      1386844
+    2:33:00     56     10      -     166893         1         1       1386876      1386844
+    2:34:00     57      3      -      34902         1         1       1384648      1384648
+    2:35:00     57      6      -      88082         1         1       1384648      1384648
+    2:36:00     57     10      -     137566         2         1       1390397      1384648
+    2:37:00     58      3     14          -         1         -             -      1383068
+    2:38:00     58      6     32          -         1         -             -      1383068
+    2:39:00     59      1     36          -         0         -             -            -
+    2:40:00     59      5     40          -         1         -             -      1384349
+    2:41:00     59      9      -     107077         2         1       1384381      1384349
+    2:42:00     60      2      -      25577         1         1       1381711      1381711
+    2:43:00     60      6      -      82835         1         1       1381711      1381711
+    2:44:00     61      1     39          -         0         -             -            -
+    2:45:00     61      4      -      58752         1         1       1384608      1384608
+    2:46:00     61      7      -     106078         1         1       1384608      1384608
+    2:47:00     61     10      -     155022         1         1       1384989      1384608
+    2:48:00     62      3      -      48546         1         1       1386023      1386023
+    2:49:00     62      8      -     104355         1         1       1386023      1386023
+    2:50:00     63      2      -      28702         1         1       1384082      1384082
+    2:51:00     63      6      -      83519         1         1       1384082      1384082
+    2:52:00     64      1     41      12246         0         1       1380768      1380768
+    2:53:00     64      5      -      56974         1         1       1380768      1380768
+    2:54:00     64      8      -     104400         1         1       1380768      1380768
+    2:55:00     65      3      -      33962         1         1       1382369      1382369
+    2:56:00     65      7     14          -         1         -             -      1382369
+    2:57:00     65     10      -     146998         1         1       1382369      1382369
+    2:58:00     66      4      -      31419         1         1       1391855      1391855
+    2:59:00     66      6      -      74842         1         1       1391855      1391855
+    3:00:00     66      9      -     121052         1         1       1391855      1391855
+    3:01:00     67      2      -      18465         1         1       1385219      1385219
+    3:02:00     67      5      -      61532         1         1       1385323      1385219
+    3:03:00     67      8      -     103032         1         1       1386044      1385219
+    3:04:00     68      1      -       4321         0         1       1386739      1386739
+    3:05:00     68      4      -      53550         1         1       1386739      1386739
+    3:06:00     68      9      9          -         1         -             -      1386739
+    3:07:00     69      2      -      23948         1         1       1387036      1387036
+    3:08:00     69      6      -      70120         1         1       1387036      1387036
+    3:09:00     69     10      -     118169         1         1       1389299      1387036
+    3:10:00     70      3      -      32747         1         1       1384977      1384977
+    3:11:00     70      6      -      77651         1         1       1384977      1384977
+    3:12:00     70      9     41     126839         1         1       1384977      1384977
+    3:13:00     71      3      -      26357         1         1       1383203      1383203
+    3:14:00     71      6      -      73120         1         1       1383215      1383203
+    3:15:00     71      9      -     116576         1         1       1383203      1383203
+    3:16:00     72      2     16          -         1         -             -      1386719
+    3:17:00     72      6     34          -         1         -             -      1386719
+    3:18:00     72      9     21          -         1         -             -      1386719
+    3:19:00     73      2     40          -         1         -             -      1385904
+    3:20:00     73      5      -      64086         1         1       1386353      1385904
+    3:21:00     73      7      -     107313         1         1       1385904      1385904
+    3:22:00     74      1     38          -         0         -             -            -
+    3:23:00     74      5      -      55240         2         1       1385713      1385639
+    3:24:00     74      8      -     101071         1         1       1385639      1385639
+    3:25:00     75      2      7          -         1         -             -      1379004
+    3:26:00     75      5      -      58795         1         1       1382737      1379004
+    3:27:00     75      8      -     103661         1         1       1379004      1379004
+    3:28:00     76      1      -       7148         0         1       1385313      1385313
+    3:29:00     76      4      -      54626         1         1       1385313      1385313
+    3:30:00     76      8      -      95863         1         1       1385313      1385313
+    3:31:00     77      1      -       7426         0         1       1384908      1384908
+    3:32:00     77      4     21          -         1         -             -      1384908
+    3:33:00     77      7     35          -         1         -             -      1384908

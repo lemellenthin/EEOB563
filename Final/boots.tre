@@ -1,0 +1,7 @@
+#NEXUS
+
+begin trees ; 
+tree tnt_1 = [&U] 
+(Erenna_richardi ,(((((((Lilyopsis_fluoracantha ,(Chelophyes_appendiculata ,(Abylopsis_tetragona ,Diphyes_dispar ))),(Kephyes_ovata ,Chuniphyes_multidentata )),(Hippopodius_hippopus ,(Prayidae_D27SS7 ,Prayidae_D27D2 ))),((((Physalia_physalis ,Rhizophysa_filiformis ),((Hydractinia_symbiolongicarpus ,Podocoryna_carnea ),(Clytia_hemisphaerica ,((Alatina_alata ,(Nematostella_vectensis ,Aiptasia_pallida )),(Hydra_magnipapillata ,Ectopleura_larynx ))))),(Apolemia_sp ,(Apolemia_rubriversa ,Apolemia_lanosa ))),(Rudjakovia_sp ,(Bargmannia_lata ,(Bargmannia_amoena ,Bargmannia_elongata ))))),((((Nanomia_bijuga ,(Halistemma_rubrum ,(Athorybia_rosacea ,Agalma_elegans ))),(Lychnagalma_utricularia ,Physophora_gilmeri )),(Cordagalma_sp ,Forskalia_asymmetrica )),(Frillagalma_vityazi ,Resomia_ornicephala ))),(Stephalia_dilata ,Thermopalia_sp )),(Marrus_claudanielis ,Physonect_sp )));
+
+end ; 
