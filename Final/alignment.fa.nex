@@ -1,0 +1,29 @@
+#NEXUS
+[written Wed Apr 17 17:50:35 CDT 2019 by Mesquite  version 3.51 (build 898) at laurmell.student.iastate.edu/10.26.5.28]
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1555541435683;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState true false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 700 464;
+			setLocation 8 8;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		endTell;
+end;
+
+
